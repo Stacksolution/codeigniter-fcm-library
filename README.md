@@ -16,4 +16,4 @@ This library use for single and multiple notification send at a time
 `$this->notification->initialize($config);`
 `$this->notification->subject("Hello");`
 `$this->notification->message("Hello i am adil");`
-`$this->notification->sendMultiple(["fZP16uRHQCWfJ2j2_c6_P3:APA91bEbRzB3gexlOVYm1i1qyPGnfc8U02EoB9-v2F7XvbHiCGIk-ry-7Eoelwhlt4wRwRZgP722WhLzfoKIFmOFBLYi0FjYjP7-QdPr0Sx_HDuGG2jIlx-A2C_XiWHhV0FObPYd1qA0","fZP16uRHQCWfJ2j2_c6_P3:APA91bEbRzB3gexlOVYm1i1qyPGnfc8U02EoB9-v2F7XvbHiCGIk-ry-7Eoelwhlt4wRwRZgP722WhLzfoKIFmOFBLYi0FjYjP7-QdPr0Sx_HDuGG2jIlx-A2C_XiWHhV0FObPYd1qA0"]);``
+`$this->notification->sendMultiple(["fZP16uRHQCWfJ2j2_c6_P3:APA91bEbRzB3gexlOVYm1i1qyPGnfc8U02EoB9-v2F7XvbHiCGIk-ry-7Eoelwhlt4wRwRZgP722WhLzfoKIFmOFBLYi0FjYjP7-QdPr0Sx_HDuGG2jIlx-A2C_XiWHhV0FObPYd1qA0","fZP16uRHQCWfJ2j2_c6_P3:APA91bEbRzB3gexlOVYm1i1qyPGnfc8U02EoB9-v2F7XvbHiCGIk-ry-7Eoelwhlt4wRwRZgP722WhLzfoKIFmOFBLYi0FjYjP7-QdPr0Sx_HDuGG2jIlx-A2C_XiWHhV0FObPYd1qA0"]);`
