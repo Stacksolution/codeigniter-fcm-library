@@ -59,6 +59,13 @@ class Notification {
     */
 	public $notification_serverkey = '';
 	
+	/**
+     *  to set the custom priority 
+     *  high
+     * @param string $notification_priority  The priority of the push notifiction
+    */
+	public $notification_priority = 'high';
+	
 	
 	public function __construct($config = array()){
 		empty($config) OR $this->initialize($config, FALSE);
@@ -72,7 +79,7 @@ class Notification {
 	 *
 	 * @param	array	$config
 	 * @param	bool	$reset
-	 * @return	CI_fcm
+	 * @return	CI_Cashfree
 	 */
 	public function initialize(array $config = array(), $reset = TRUE){
 		$reflection = new ReflectionClass($this);
@@ -136,7 +143,14 @@ class Notification {
     public function data($data){
         $this->notification_data = $data;
     }
-    
+     /**
+     * Function to set the priority
+     *
+     * @param string $notification_message  The priority of the push priority
+    */
+    public function priority($priority){
+        $this->notification_message = $priority;
+    }
     /**
      * Generating the push message array
      *
@@ -158,6 +172,10 @@ class Notification {
         
         if(!empty($this->notification_data)){
             $content['data']['payload'] = $this->notification_data;
+        }
+        
+        if(!empty($this->notification_priority)){
+            $content['data']['priority'] = $this->notification_priority;
         }
         
         $content['data']['timestamp'] = date('Y-m-d G:i:s');
